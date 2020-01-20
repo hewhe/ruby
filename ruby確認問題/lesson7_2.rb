@@ -3,9 +3,11 @@ puts "何回繰り返しますか？"
 
 l = gets.to_i
 
-while do
+i = 1
 
-    puts "#{l}回目の計算"
+while i <= l do
+
+    puts "#{i}回目の計算"
     puts "2つの値を入力して下さい"
 
     a = gets.to_i
@@ -19,7 +21,9 @@ while do
     puts "a+b=#{a + b}"
     puts "a-b=#{a - b}"
     puts "a*b=#{a * b}"
-    puts "a/b=#{a / b}"
+    puts "a/b=#{a / b}" # 実数値はどうする？
+
+    i += 1
 end
 
 puts = "計算を終了します"
